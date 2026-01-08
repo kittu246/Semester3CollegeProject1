@@ -293,8 +293,8 @@ margin-top: 4px;
     }
 
     .galleryDiv{
-        height: auto ;
-        min-height: auto;
+        height: fit-content ;
+     
     }
 
 
