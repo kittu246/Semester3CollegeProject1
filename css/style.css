@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  sans-serif;
+    /* font-style: italic; */
+    box-sizing: border-box;
+
+}
+nav{
+    position: sticky;
+    top:0;
+    z-index: 1;
+
+}
+html {
+  scroll-padding-top: 80px;
+}
+
+.leftNav,.rightNav{
+    display: flex;
+    align-items: center;
+    gap:30px;
+}
+.leftNav{
+    gap:10px
+}
+
+.rightNav>a{
+
+    color: #4F4F4F;
+    text-decoration: none;
+    font-weight: 550;
+
+
+}
+.rightNav>a:hover{
+
+    text-decoration: none;
+    color: #0d6efd !important;
+    text-shadow: 0  0 8px #bfc3e0;
+}
+.rightNav>button{
+    font-size: 16px;
+    padding-inline: 18px;
+    padding-block: 5px;
+    border-radius: 6px;
+   
+}
+.rightNav>button:hover{
+    background-color: #0d6efd;
+    color: white !important;
+}
+.leftAbout>h4,.duration{
+    font-style: italic;
+}
+
+#About{
+ gap:60px !important;
+
+}
+
+.mainBody{
+    padding-inline: 80px;
+}
+
+.leftAbout{
+flex: 3;
+}
+.rightAbout{
+   flex:1.2;
+   box-shadow: 0 0 18px #b6c9ee;
+
+}
+
+.smallText{
+    font-size: 14px;
+    color: #595959;
+}
+.smallText>p:first-child{
+ font-weight: 700;
+}
+.smallText >p{
+    margin: 0;
+}
+/* .standardmargin{
+    margin-bottom: -35px;
+
+} */
+.aboutCards{
+    gap:15px;
+}
+.aboutCard{
+gap:8px;
+}
+
+form>input,form>button{
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+form>input{
+    background-color: #fafafa;
+    font-size: 12px;
+    
+}
+form>button{
+    background: linear-gradient(to right,#3b77ed,#5d5ded,#8f36ed);
+    color: whitesmoke;
+    font-size: 14px;
+}
+.eventSection{
+    background-color: #ecf8ff;
+    padding :40px;
+}
+.subEventSection>h3{
+    color: #7757ee;
+    font-style: italic;
+   
+
+}
+.subEventSection>h2{
+    color: #007bff;
+
+}
+
+.eventscard{
+    gap:50px;
+   
+    width:90%;margin-top: 30px;
+}
+.leftEvent{
+     background-color: white;
+     
+     width: 495px;
+  height: 600px;
+}
+
+.leftEvent>div:nth-child(2){
+    gap:10px;
+    margin-bottom: 10px;
+    flex:1;
+   
+}
+.event1Left,.event2Left ,.event3Left,.event4Left,.event5Left{
+    width:50%;
+}
+.rightEvent{
+    flex:1;
+     background-color: white;
+     width: 495px;
+  height: 615px;
+}
+
+.primaryButton{
+  
+    border:none;
+    background-color: #e0f3ff;
+    color: #1d78bd;
+    padding: 3px;
+    border-radius: 5px;
+}
+.primaryButtonRight{
+    
+    border:none;
+    background-color: #FFEED8;
+    color: #965400;
+    padding: 3px;
+    border-radius: 5px;
+
+}
+
+/* .event1,.event2,.event3,.event4,.event5{
+    gap:100px;
+} */
+
+.leftEventGap{
+    gap:10px;
+}
+.eventButtonDiv{
+    margin-top: 50px;
+}
+
+.eventButton{
+    width:210px;
+}
+
+#Gallery{
+    margin-top: 40px;
+}
+
+#Gallery>h2{
+    color: #007bff;
+}
+.gallerySection{
+    padding:20px;
+    gap:30px;
+}
+.galleryDiv{
+    border-radius: 2px;
+    
+    box-shadow: 0 0 20px #a7c6e7;
+    height:360px;
+    width:300px;
+    overflow: 0;
+
+}
+.galleryImageDiv{
+    width:100%;
+    height:85%;
+    overflow: 0;
+
+}
+.galleryImageDiv>img{
+    width: 100%;
+    height: 100%;
+    
+object-fit: cover;
+
+}
+
+.galleryDiv>h4{
+text-align: center;
+padding: 3px;
+color: #007bff;
+font-weight: 600;
+margin-top: 4px;
+
+}
+
+#Contact{
+    background-color: #9dc6f1;
+}
+
+.contactSection{
+    padding: 40px;
+}
+.leftContact{
+
+    color: white;
+    padding: 20px;
+
+    flex:1;
+    
+    
+}
+
+.rightContact{
+    flex:1;
+    
+    
+}
+.rightContact>img{
+     height: 100%;
+     width: 100%;
+     object-fit: cover;
+}
+.contactIcons{
+    gap:10px;
+
+}
+.contactIcons >div{
+
+    border: 2px solid white;
+    border-radius: 50%;
+    height:40px;
+    width: 40px;
+    padding:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
