@@ -25,7 +25,7 @@ html {
     gap:10px
 }
 
-.rightNav>a{
+.rightNavLink>a{
 
     color: #4F4F4F;
     text-decoration: none;
@@ -33,13 +33,13 @@ html {
 
 
 }
-.rightNav>a:hover{
+.rightNavLink>a:hover{
 
     text-decoration: none;
     color: #0d6efd !important;
     text-shadow: 0  0 8px #bfc3e0;
 }
-.rightNav>button{
+.rightNavButton{
     font-size: 16px;
     padding-inline: 18px;
     padding-block: 5px;
