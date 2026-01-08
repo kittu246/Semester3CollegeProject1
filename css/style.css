@@ -287,6 +287,12 @@ margin-top: 4px;
 @media screen and (max-width:767px) {
 
 
+    
+.mainBody{
+    padding-inline: 30px;
+}
+
+
     #About{
         justify-content: center;
     }
