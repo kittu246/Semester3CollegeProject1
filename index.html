@@ -80,6 +80,9 @@
             <a href="#Contact">Contact</a>
           </li>
         </ul>
+        <button id="toggleButton" class="border rounded border-primary text-primary ml-3 rightNavButton fs-6">
+          🌙 Dark Mode
+        </button>
         <button class="border border-primary text-primary ml-3 rightNavButton fs-6">
           Login
         </button>
@@ -172,7 +175,7 @@
         <h3 style="text-align: center;">LEARN FULL STACK WEB DEVELOPMENT</h3>
         <h2>OUR COURSES</h2>
         <div class="eventscard d-flex flex-wrap">
-          <div class="leftEvent border p-4 rounded">
+          <div  class="leftEvent border p-4 rounded">
             <div class="eventHead d-flex justify-content-center mb-3">
               <img src="./assets/Sapling Icon.png" />
               <h2>Beginner</h2>
@@ -242,7 +245,7 @@
               </div>
             </div>
           </div>
-          <div class="leftEvent border p-4 rounded">
+          <div id="rightEvent" class=" leftEvent border p-4 rounded">
             <div class="eventHead d-flex justify-content-center mb-3">
               <img src="./assets/Intermediate.png" />
               <h2>Intermediate</h2>
@@ -373,7 +376,7 @@
 
     <!-- start of contact -->
     <section id="Contact">
-      <div class="d-flex mainBody pt-4 pb-4">
+      <div class="d-flex mainBody pt-4 pb-4 contactContainer">
         <div class="leftContact">
           <h2>ACCIOJOB 2026</h2>
           <div class="contactIcons mt-3 mb-3 d-flex">
@@ -410,7 +413,15 @@
           </div>
         </div>
         <div class="rightContact">
-          <img src="./assets/AcciojobContactPage.webp" />
+          <!-- <img src="./assets/AcciojobContactPage.webp" /> -->
+           <h2 style="color: white;">Contact Us</h2>
+           <form id="contactForm">
+            <input type="text" placeholder="Name" class="p-2"  id="name"/>
+            <input type="email" placeholder="Email" class="p-2" id="email"/>
+            <input type="number" placeholder="Phone Number " class="p-2" id="number"/>
+            <textarea type="text" style="width: 100%;" class="p-2" id="message" placeholder="Enter Message"></textarea>
+            <button>Submit</button>
+           </form>
         </div>
       </div>
     </section>
@@ -426,5 +437,6 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
