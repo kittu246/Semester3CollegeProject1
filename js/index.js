@@ -82,5 +82,64 @@ toggleButton.addEventListener("click",() =>{
 
 // end of dark Mode application
 
+//hover effect
+
+const hoverButtons = document.querySelectorAll(".navButton");
+console.log(hoverButtons);
+
+hoverButtons.forEach((button)=>{
+
+    button.style.transition = " all .3s ease";
+    button.addEventListener("mouseover",()=>{
+
+        button.style.background ="#007bff";
+        button.style.color ="white";
+        button.style.transform="scale(1.1)";
+    })
+
+    button.addEventListener("mouseout",()=>{
+
+        button.style.background ="#f8f9fa";
+        button.style.color ="#007bff";
+        button.style.transform="scale(1)";
+    })
+
+})
+
+// end of hover effect
+
+// filter 
+
+const eventcards = document.querySelectorAll(".event-card");
+const filterSelect= document.getElementById("filterEvent");
+console.log("eventcards",eventcards);
+console.log("filterSelect",filterSelect);
+
+
+filterSelect.addEventListener("change",function(){
+    const selectedValue = this.value;
+    console.log("selectedValue",selectedValue)
+    eventcards.forEach((card)=>{
+
+        console.log("card",card);
+
+        const cardLevel = card.getAttribute("data-level");
+        console.log("cardLevel",cardLevel);
+        if(selectedValue === "all" || selectedValue === cardLevel ){
+            card.style.display ="block";
+        }
+        else{
+           card.style.display ="none"; 
+        }
+
+
+    })
+    
+})
+
+// end of filter
+
+
+
 
 

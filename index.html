@@ -80,10 +80,10 @@
             <a href="#Contact">Contact</a>
           </li>
         </ul>
-        <button id="toggleButton" class="border rounded border-primary text-primary ml-3 rightNavButton fs-6">
+        <button id="toggleButton" class="border navButton rounded border-primary  ml-3 rightNavButton fs-6">
           🌙 Dark Mode
         </button>
-        <button class="border border-primary text-primary ml-3 rightNavButton fs-6">
+        <button class="border navButton border-primary  ml-3 rightNavButton fs-6">
           Login
         </button>
       </div>
@@ -174,8 +174,15 @@
       <section class="subEventSection d-flex flex-column align-items-center">
         <h3 style="text-align: center;">LEARN FULL STACK WEB DEVELOPMENT</h3>
         <h2>OUR COURSES</h2>
+        <label class="text-primary fw-2" for="filterEvent">Filter Events</label>
+        <select id="filterEvent"  >
+          <option value="all">Select Event</option>
+          <option value="Beginner">Beginner</option>
+          <option value="Intermediate">Intermediate</option>
+          
+        </select>
         <div class="eventscard d-flex flex-wrap">
-          <div  class="leftEvent border p-4 rounded">
+          <div  class="leftEvent border p-4 rounded event-card" data-level="Beginner">
             <div class="eventHead d-flex justify-content-center mb-3">
               <img src="./assets/Sapling Icon.png" />
               <h2>Beginner</h2>
@@ -245,7 +252,7 @@
               </div>
             </div>
           </div>
-          <div id="rightEvent" class=" leftEvent border p-4 rounded">
+          <div id="rightEvent" class=" leftEvent border p-4 rounded event-card" data-level="Intermediate">
             <div class="eventHead d-flex justify-content-center mb-3">
               <img src="./assets/Intermediate.png" />
               <h2>Intermediate</h2>
@@ -328,6 +335,8 @@
     <section id="Gallery" class="mainBody mt-4">
       <h2 style="text-align: center">Our Branches</h2>
       <div class="gallerySection d-flex flex-wrap justify-content-center">
+       
+        
         <div class="galleryDiv">
           <div class="galleryImageDiv">
             <img src="./assets/AcciojobBangalore.jpg" />
@@ -370,6 +379,8 @@
           </div>
           <h4>ACCIOJOB-Pune</h4>
         </div>
+       
+        
       </div>
     </section>
     <!-- end of gallery -->
