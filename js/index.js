@@ -139,6 +139,26 @@ filterSelect.addEventListener("change",function(){
 
 // end of filter
 
+//start of caorosel
+
+const galleryDiv = document.querySelector(".gallerySection");
+const prevButton = document.querySelector(".prev");
+const nextButton = document.querySelector(".next");
+const card = document.querySelector(".galleryDiv");
+
+
+const cardWidth = card.offsetWidth+30;
+
+nextButton.addEventListener("click",() =>{
+    galleryDiv.scrollLeft+=cardWidth
+})
+prevButton.addEventListener("click",() =>{
+    galleryDiv.scrollLeft-=cardWidth
+})
+
+// end of caorosel
+
+
 
 
 
